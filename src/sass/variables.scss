@@ -1,0 +1,39 @@
+// Colors
+//---------------------------------
+
+// Default
+
+$color-default-black:             #000000;
+$color-default-white:             #ffffff;
+$color-transparent:               rgba(255, 255, 255, 0);
+
+// Base
+
+$color-text:                      $color-default-black;
+
+$color-body:                      $color-default-white;
+
+// Typography
+//---------------------------------
+
+$font-family:                     "Arial", sans-serif;
+$font-size:                       16px;
+$line-height:                     1.5;
+
+// Viewports
+//---------------------------------
+
+$screen--xxs:                     320px;
+$screen--xs:                      640px;
+$screen--sm:                      768px;
+$screen--md:                      1024px;
+$screen--lg:                      1280px;
+$screen--xl:                      1440px;
+$screen--xxl:                     1680px;
+$screen--xxxl:                    1920px;
+
+// Retina
+//---------------------------------
+
+$retina-dpi:                      144dpi;
+$retina-dppx:                     1.5dppx;
