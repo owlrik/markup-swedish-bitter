@@ -1,0 +1,17 @@
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  max-width: 1720px;
+  min-height: 100vh;
+  margin: 0 auto;
+}
+
+.wrapper .page-header,
+.wrapper .page-footer {
+  flex-shrink: 0;
+}
+
+.wrapper main {
+  flex-grow: 1;
+}

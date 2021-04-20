@@ -1,0 +1,21 @@
+.page-header {
+  min-height: 105px;
+  color: $color-text--light;
+}
+
+.page-header__inner {
+  display: flex;
+  align-items: center;
+}
+
+.page-header__logo {
+  margin-right: 25px;
+}
+
+.page-header__delivery {
+  margin: 0;
+}
+
+.page-header__phone {
+  margin-left: auto;
+}

@@ -1,0 +1,28 @@
+.phone {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+.phone__number {
+  position: relative;
+  padding-left: 25px;
+  font-size: 20px;
+  line-height: 1;
+  color: $color-text;
+  text-decoration: none;
+}
+
+.phone__number svg {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  display: block;
+  transform: translateY(-50%);
+  fill: #a8c48c;
+}
+
+.phone__text {
+  margin: 0;
+  font-size: 12px;
+}
