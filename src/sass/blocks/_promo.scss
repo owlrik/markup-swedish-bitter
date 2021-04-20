@@ -1,0 +1,47 @@
+.promo {
+  color: $color-text--invert;
+  background: url("../img/bg/bg-promo.jpg") center top/100% 544px no-repeat;
+}
+
+.promo__inner {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 94px;
+}
+
+.promo__left {
+  width: 50%;
+  max-width: 570px;
+}
+
+.promo__left img {
+  width: 298px;
+  margin: 0 auto;
+}
+
+.promo__right {
+  width: 50%;
+  max-width: 570px;
+  padding-top: 75px;
+}
+
+.promo__right .btn {
+  margin-top: 195px;
+}
+
+.promo__title {
+  margin: 0 0 20px;
+  font-weight: 600;
+  font-size: 60px;
+}
+
+.promo__title-upper {
+  display: block;
+  font-size: 14px;
+  text-transform: uppercase;
+}
+
+.promo__text {
+  margin: 0 0 1rem;
+  font-size: 18px;
+}
