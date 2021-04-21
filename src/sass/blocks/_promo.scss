@@ -20,13 +20,19 @@
 }
 
 .promo__right {
+  display: flex;
+  flex-direction: column;
   width: 50%;
   max-width: 570px;
   padding-top: 75px;
 }
 
 .promo__right .btn {
-  margin-top: 195px;
+  width: 100%;
+  max-width: 500px;
+  margin-top: auto;
+  margin-bottom: 110px;
+  margin-left: auto;
 }
 
 .promo__title {
