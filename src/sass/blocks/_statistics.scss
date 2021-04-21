@@ -1,0 +1,17 @@
+.statistics__inner {
+  padding-top: 46px;
+  padding-bottom: 50px;
+}
+
+.statistics__list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: 0;
+  padding: 0;
+}
+
+.statistics__item {
+  width: 25%;
+  max-width: 260px;
+}

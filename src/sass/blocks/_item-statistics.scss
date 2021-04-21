@@ -1,0 +1,49 @@
+.item-statistics {
+  position: relative;
+  padding-top: 25px;
+  padding-left: 45px;
+  font-size: 16px;
+  color: $color-default-black;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: block;
+    width: 25px;
+    height: 25px;
+    background-color: $color-transparent;
+    border: 5px solid #e4eddc;
+    border-radius: 50%;
+  }
+}
+
+.item-statistics__year {
+  position: relative;
+  display: inline-block;
+  margin: 0 0 25px;
+  font-weight: 600;
+  font-size: 30px;
+  color: #a4c58c;
+
+  &::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    display: block;
+    width: 100%;
+    height: 3px;
+    background-color: #a4c58c;
+  }
+}
+
+.item-statistics__year span {
+  font-size: 18px;
+}
+
+.item-statistics__descr {
+  max-width: 210px;
+  margin: 0;
+}
