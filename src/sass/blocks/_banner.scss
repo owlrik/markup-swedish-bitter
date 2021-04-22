@@ -1,0 +1,37 @@
+.banner {
+  position: relative;
+  padding: 20px;
+
+  &--bg-dark {
+    background-color: #f6f9f3;
+  }
+}
+
+.banner--bg-dark .banner__link {
+  background-color: #f6f9f3;
+}
+
+.banner__inner {
+  padding: 50px;
+  border: 1px solid #a4c58c;
+}
+
+.banner__text-wrap p {
+  margin: 0 0 18px;
+
+  &:only-child,
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
+.banner__link {
+  display: inline-block;
+  padding-right: 8px;
+  padding-left: 8px;
+  font-weight: 600;
+  color: #7eb152;
+  text-decoration-thickness: 0.0625em;
+  text-underline-offset: 2px;
+  background-color: $color-body;
+}

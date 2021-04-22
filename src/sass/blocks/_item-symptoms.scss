@@ -1,0 +1,41 @@
+.item-symptoms {
+  position: relative;
+  display: flex;
+  padding-right: 30px;
+  padding-left: 40px;
+  border-bottom: 1px solid rgba(164, 197, 140, 0.8);
+  counter-increment: symptomsCounter;
+
+  &::before {
+    content: counter(symptomsCounter, decimal-leading-zero) ".";
+    position: absolute;
+    top: 50%;
+    left: 0;
+    display: block;
+    font-weight: 600;
+    font-size: 14px;
+    color: #a4c58c;
+    letter-spacing: 1px;
+    transform: translateY(-50%);
+  }
+}
+
+.item-symptoms__text {
+  flex-grow: 1;
+  margin: auto 0;
+  font-weight: 600;
+  font-size: 14px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.item-symptoms__icon {
+  position: absolute;
+  top: 50%;
+  right: 40px;
+  display: block;
+  width: 8px;
+  height: 13px;
+  transform: translateY(-50%);
+  fill: #97b979;
+}
