@@ -1,0 +1,33 @@
+.quote {
+  margin: 0;
+  text-align: center;
+  border-top: 3px solid #a4c58c;
+  border-bottom: 3px solid #a4c58c;
+}
+
+.quote__inner {
+  padding-top: 55px;
+  padding-bottom: 55px;
+}
+
+.quote__text {
+  margin: 0;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 1.66;
+}
+
+.quote__footer {
+  margin-top: 35px;
+}
+
+.quote__author {
+  font-style: normal;
+  font-size: 18px;
+  line-height: 1.66;
+}
+
+.quote__date {
+  font-size: 16px;
+  color: #9a9a9a;
+}

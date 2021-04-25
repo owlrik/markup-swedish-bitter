@@ -1,0 +1,27 @@
+.field-text__input-wrap {
+  position: relative;
+}
+
+.field-text__input {
+  display: inline-block;
+  width: 100%;
+  padding: 8px 0;
+  font-size: 14px;
+  line-height: 1.5;
+  font-family: $font-family--montserrat;
+  color: #a8c48c;
+  border: 0;
+  border-bottom: 1px solid currentColor;
+  border-radius: 0;
+
+  &::placeholder {
+    color: currentColor;
+  }
+}
+
+.field-text__error-message {
+  max-height: 0;
+  margin: 0;
+  visibility: hidden;
+  opacity: 0;
+}

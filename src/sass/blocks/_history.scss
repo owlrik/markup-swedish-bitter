@@ -1,0 +1,109 @@
+.history__inner {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.history__left {
+  display: flex;
+  flex-direction: column;
+  width: 40%;
+  max-width: 685px;
+  margin-left: auto;
+  padding-top: 90px;
+  padding-left: 15px;
+}
+
+.history__title {
+  margin: 0 0 40px;
+  font-size: 40px;
+  line-height: 1.25;
+}
+
+.history__text-content {
+  position: relative;
+  padding-top: 55px;
+  padding-bottom: 58px;
+  background-color: #f6f9f3;
+
+  &::before,
+  &::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    display: block;
+    height: 100%;
+    background-color: inherit;
+  }
+
+  &::before {
+    left: 0;
+    width: calc((1720px - 1200px) / 2);
+    transform: translateX(-100%);
+  }
+
+  &::after {
+    right: 1px;
+    width: 30px;
+    transform: translateX(100%);
+  }
+}
+
+.history__text-content p {
+  margin: 0 0 13px;
+
+  &:only-child,
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
+.history__form {
+  max-width: 470px;
+  margin-top: auto;
+  margin-left: auto;
+  padding-top: 20px;
+  padding-right: 70px;
+  padding-left: 30px;
+}
+
+.history__form .btn {
+  width: 100%;
+  margin-top: 30px;
+}
+
+.history__right {
+  width: 45%;
+  max-width: 775px;
+}
+
+.history__quote-wrap {
+  width: 100%;
+  max-width: 770px;
+  margin: 200px auto 0;
+}
+
+.history__quote {
+  position: relative;
+
+  &::before,
+  &::after {
+    content: "";
+    position: absolute;
+    top: -8rem;
+    display: block;
+    width: 530px;
+    height: 560px;
+    background: url("../img/bg/decor-leaves.png") 100% / contain no-repeat;
+  }
+
+  &::before {
+    left: -5rem;
+    transform: translateX(-100%) scaleX(-1);
+  }
+
+  &::after {
+    right: -5rem;
+    transform: translateX(100%);
+  }
+}

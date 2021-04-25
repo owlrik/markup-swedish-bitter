@@ -20,4 +20,9 @@
   cursor: pointer;
   user-select: none;
   touch-action: manipulation;
+
+  &--narrow {
+    padding-top: 19px;
+    padding-bottom: 20px;
+  }
 }
