@@ -1,0 +1,40 @@
+.preparation__inner {
+  display: flex;
+}
+
+.preparation__left {
+  width: 62.5%;
+  max-width: 1075px;
+}
+
+.preparation__right {
+  max-width: 685px;
+  margin-left: -315px;
+  padding-top: 60px;
+}
+
+.preparation__title {
+  margin: 0 0 48px;
+  font-size: 40px;
+  line-height: 1.25;
+}
+
+.preparation__banner .banner__inner {
+  padding: 58px 30px 70px 80px;
+}
+
+.preparation__banner .banner__text-wrap p {
+  margin: 0 0 15px;
+  line-height: 1.375;
+
+  &:last-child {
+    margin-top: 28px;
+    margin-bottom: 0;
+  }
+}
+
+.preparation__banner .btn {
+  width: 100%;
+  max-width: 500px;
+  margin-top: 60px;
+}
