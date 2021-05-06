@@ -476,61 +476,103 @@
       <section class="testimonials" id="testimonials">
         <div class="container">
           <div class="testimonials__inner">
-            <h2 class="testimonials__title">Отзывы о «Swedish Bitter»</h2>
+            <h2 class="testimonials__title">Отзывы<br> о&nbsp;&laquo;Swedish Bitter&raquo;</h2>
 
-            <div class="testimonials__content">
-              <ul class="testimonials__regions">
-                <li class="testimonials__region">
-                  <input type="radio" name="type" value="russian" id="type-russian" checked>
-                  <label class="testimonials__type-btn" for="type-russian">От российских потребителей</label>
+            <div class="tabs testimonials__tabs">
+              <ul class="tabs__links testimonials__regions" role="tablist">
+                <li class="tabs__link-wrap tabs__link-wrap--active testimonials__region" role="presentation">
+                  <a class="tabs__link" href="#section1" role="tab">От&nbsp;российских потребителей</a>
                 </li>
 
-                <li class="testimonials__region">
-                  <input type="radio" name="type" value="foreign" id="type-foreign">
-                  <label class="testimonials__type-btn" for="type-foreign">От зарубежных потребителей</label>
+                <li class="tabs__link-wrap testimonials__region" role="presentation">
+                  <a class="tabs__link" href="#section2" role="tab">От&nbsp;зарубежных потребителей</a>
                 </li>
               </ul>
 
-              <div class="testimonials__type-content">
-                <blockquote class="testimonials-item">
-                  <p class="testimonials-item__text">
-                    Если время от времени употреблять горечь, то вообще не будет болеть ОРЗ или ангинами.
-                    Младшему сыну я развожу раствор слабее (горечь, вода), он с удовольствием пьет,
-                    иногда даже сам просит сделать ему горечь. Только делаю меньше половины стакана, чтобы малыш смог выпить.
-                  </p>
-                  <cite class="testimonials-item__author">Аноним</cite>
-                </blockquote>
+              <div class="tabs__content-wrapper testimonials__content">
+                <section class="tabs__content-item" id="section1" role="tabpanel">
+                  <h3 class="sr-only">От&nbsp;российских потребителей</h3>
 
-                <blockquote class="testimonials-item">
-                  <p class="testimonials-item__text">
-                    Этот сбор действительно очень хорошая вещь. Я его приобрела по совету своей тёти.
-                    Замечательно помогает при зубной боли, а также я его постоянно принимаю при простуде.
-                    Помогает хорошо и нет никакой химии.
-                  </p>
-                  <cite class="testimonials-item__author">Юлия</cite>
-                </blockquote>
+                  <blockquote class="item-testimonials testimonials__item-testimonials">
+                    <p class="item-testimonials__text">
+                      Если время от&nbsp;времени употреблять горечь, то&nbsp;вообще не&nbsp;будет болеть ОРЗ или ангинами.
+                      Младшему сыну я&nbsp;развожу раствор слабее (горечь, вода), он&nbsp;с&nbsp;удовольствием пьет,
+                      иногда даже сам просит сделать ему горечь. Только делаю меньше половины стакана, чтобы малыш смог выпить.
+                    </p>
+                    <cite class="item-testimonials__author">Аноним</cite>
+                  </blockquote>
 
-                <blockquote class="testimonials-item">
-                  <p class="testimonials-item__text">
-                    Моя семья на протяжение многих лет пользуется шведской горечью. При болях в горле мы полоскаем горечью.
-                    Когда температура я даю горечь и при этом мы не пользуемся таблетками.
-                  </p>
-                  <cite class="testimonials-item__author">Натали</cite>
-                </blockquote>
+                  <blockquote class="item-testimonials testimonials__item-testimonials">
+                    <p class="item-testimonials__text">
+                      Этот сбор действительно очень хорошая вещь. Я&nbsp;его приобрела по&nbsp;совету своей тёти.
+                      Замечательно помогает при зубной боли, а&nbsp;также я&nbsp;его постоянно принимаю при простуде.
+                      Помогает хорошо и&nbsp;нет никакой химии.
+                    </p>
+                    <cite class="item-testimonials__author">Юлия</cite>
+                  </blockquote>
 
-                <blockquote class="testimonials-item">
-                  <p class="testimonials-item__text">
-                    Я покупаю уже готовый сбор шведский бальзам. Отказались от многих лекарственных препаратов благодаря бальзаму.
-                    Так что могу только посоветовать самим попробовать, это стоит того.
-                  </p>
-                  <cite class="testimonials-item__author">Евгений</cite>
-                </blockquote>
+                  <blockquote class="item-testimonials testimonials__item-testimonials">
+                    <p class="item-testimonials__text">
+                      Моя семья на&nbsp;протяжение многих лет пользуется шведской горечью. При болях в&nbsp;горле
+                      мы&nbsp;полоскаем горечью. Когда температура я&nbsp;даю горечь и&nbsp;при этом
+                      мы&nbsp;не&nbsp;пользуемся таблетками.
+                    </p>
+                    <cite class="item-testimonials__author">Натали</cite>
+                  </blockquote>
+
+                  <blockquote class="item-testimonials testimonials__item-testimonials">
+                    <p class="item-testimonials__text">
+                      Я&nbsp;покупаю уже готовый сбор шведский бальзам. Отказались от&nbsp;многих лекарственных препаратов
+                      благодаря бальзаму. Так что могу только посоветовать самим попробовать, это стоит того.
+                    </p>
+                    <cite class="item-testimonials__author">Евгений</cite>
+                  </blockquote>
+                </section>
+
+<!--                <section class="tabs__content-item" id="section2" role="tabpanel">-->
+<!--                  <h3 class="sr-only">От&nbsp;зарубежных потребителей</h3>-->
+
+<!--                  <blockquote class="item-testimonials">-->
+<!--                    <p class="item-testimonials__text">-->
+<!--                      Если время от&nbsp;времени употреблять горечь, то&nbsp;вообще не&nbsp;будет болеть ОРЗ или ангинами.-->
+<!--                      Младшему сыну я&nbsp;развожу раствор слабее (горечь, вода), он&nbsp;с&nbsp;удовольствием пьет,-->
+<!--                      иногда даже сам просит сделать ему горечь. Только делаю меньше половины стакана, чтобы малыш смог выпить.-->
+<!--                    </p>-->
+<!--                    <cite class="item-testimonials__author">Аноним</cite>-->
+<!--                  </blockquote>-->
+
+<!--                  <blockquote class="item-testimonials">-->
+<!--                    <p class="item-testimonials__text">-->
+<!--                      Этот сбор действительно очень хорошая вещь. Я&nbsp;его приобрела по&nbsp;совету своей тёти.-->
+<!--                      Замечательно помогает при зубной боли, а&nbsp;также я&nbsp;его постоянно принимаю при простуде.-->
+<!--                      Помогает хорошо и&nbsp;нет никакой химии.-->
+<!--                    </p>-->
+<!--                    <cite class="item-testimonials__author">Юлия</cite>-->
+<!--                  </blockquote>-->
+
+<!--                  <blockquote class="item-testimonials">-->
+<!--                    <p class="item-testimonials__text">-->
+<!--                      Моя семья на&nbsp;протяжение многих лет пользуется шведской горечью. При болях в&nbsp;горле-->
+<!--                      мы&nbsp;полоскаем горечью. Когда температура я&nbsp;даю горечь и&nbsp;при этом-->
+<!--                      мы&nbsp;не&nbsp;пользуемся таблетками.-->
+<!--                    </p>-->
+<!--                    <cite class="item-testimonials__author">Натали</cite>-->
+<!--                  </blockquote>-->
+
+<!--                  <blockquote class="item-testimonials">-->
+<!--                    <p class="item-testimonials__text">-->
+<!--                      Я&nbsp;покупаю уже готовый сбор шведский бальзам. Отказались от&nbsp;многих лекарственных препаратов-->
+<!--                      благодаря бальзаму. Так что могу только посоветовать самим попробовать, это стоит того.-->
+<!--                    </p>-->
+<!--                    <cite class="item-testimonials__author">Евгений</cite>-->
+<!--                  </blockquote>-->
+<!--                </section>-->
               </div>
             </div>
 
             <div class="testimonials__bottom-wrap">
-              <a class="testimonials__link" href="#">Читать ещё отзывы</a>
-              <a class="btn testimonials__btn" href="#">Присоединиться к тем, кто решил свои проблемы</a>
+              <a class="testimonials__link-more" href="#">Читать ещё отзывы</a>
+              <a class="btn" href="#">Присоединиться к тем, кто решил свои проблемы</a>
             </div>
           </div>
         </div>

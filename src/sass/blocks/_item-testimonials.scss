@@ -1,0 +1,35 @@
+.item-testimonials {
+  position: relative;
+  padding-top: 20px;
+  font-size: 16px;
+  line-height: 1.375;
+  color: #9a9a9a;
+
+  &:nth-of-type(2n) {
+    margin-right: 0;
+  }
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: block;
+    width: 30px;
+    height: 3px;
+    background-color: #a4c58c;
+  }
+}
+
+.item-testimonials__text {
+  margin: 0;
+}
+
+.item-testimonials__author {
+  display: block;
+  margin-top: 7px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 2.25;
+  color: $color-text;
+}
