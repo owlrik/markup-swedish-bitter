@@ -1,8 +1,11 @@
 .btn {
   position: relative;
-  display: inline-block;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   max-width: 100%;
-  padding: 24px 45px 24px 15px;
+  min-height: 70px;
+  padding: 24px 15px;
   font-weight: 600;
   font-size: 14px;
   line-height: 1.57;
@@ -21,8 +24,40 @@
   user-select: none;
   touch-action: manipulation;
 
+  @media screen and (max-width: $screen--xs - 1) {
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+
+  @media screen and (max-width: $screen--xs-small - 1) {
+    font-size: 12px;
+  }
+
   &--narrow {
+    min-height: 60px;
     padding-top: 19px;
     padding-bottom: 20px;
+  }
+}
+
+.btn svg {
+  margin-left: 20px;
+  fill: $color-default-white;
+  fill-opacity: 0.5;
+
+  @media screen and (max-width: $screen--xs - 1) {
+    display: none;
+  }
+}
+
+.btn__text-desktop {
+  @media screen and (max-width: $screen--xs - 1) {
+    display: none;
+  }
+}
+
+.btn__text-mobile {
+  @media screen and (min-width: $screen--lg) {
+    display: none;
   }
 }

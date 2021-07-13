@@ -2,10 +2,19 @@
   display: flex;
   flex: 0 0 auto;
   height: 105px;
+
+  @media screen and (max-width: $screen--sm - 1) {
+    height: 65px;
+  }
 }
 
 .logo img {
   display: block;
+  width: 198px;
   height: 29px;
   margin: auto 0;
+
+  @media screen and (max-width: $screen--sm - 1) {
+    width: 110px;
+  }
 }

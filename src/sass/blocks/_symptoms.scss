@@ -1,5 +1,13 @@
 .symptoms {
   margin-bottom: 150px;
+
+  @media screen and (max-width: $screen--lg - 1) {
+    margin-bottom: 95px;
+  }
+
+  @media screen and (max-width: $screen--xs-small - 1) {
+    margin-bottom: 55px;
+  }
 }
 
 .symptoms__inner {
@@ -8,18 +16,48 @@
   justify-content: space-between;
   padding-top: 145px;
   padding-bottom: 50px;
+
+  @media screen and (max-width: $screen--lg - 1) {
+    flex-direction: column;
+    padding-top: 10px;
+  }
+
+  @media screen and (max-width: $screen--xs-small - 1) {
+    padding-bottom: 0;
+  }
 }
 
 .symptoms__left {
   width: 57%;
   max-width: 670px;
   padding-top: 40px;
+
+  @media screen and (max-width: $screen--lg - 1) {
+    width: 100%;
+    max-width: none;
+    padding-top: 0;
+  }
 }
 
 .symptoms__title {
   margin: 0 0 40px;
+  font-weight: 700;
   font-size: 40px;
   line-height: 1.25;
+
+  @media screen and (max-width: $screen--lg - 1) {
+    max-width: 335px;
+    margin: 0 auto 45px;
+    font-size: 30px;
+    line-height: 1.33;
+    text-align: center;
+  }
+
+  @media screen and (max-width: $screen--xs - 1) {
+    margin-bottom: 25px;
+    font-size: 24px;
+    line-height: 1.25;
+  }
 }
 
 .symptoms__list {
@@ -31,6 +69,15 @@
   list-style: none;
   background-color: #f6f9f3;
   counter-reset: symptomsCounter;
+
+  @media screen and (max-width: $screen--lg - 1) {
+    padding: 0 35px 0 45px;
+  }
+
+  @media screen and (max-width: $screen--xs-small - 1) {
+    padding-right: 0;
+    padding-left: 10px;
+  }
 
   &::before {
     content: "";
@@ -54,6 +101,10 @@
     height: 100%;
     background-color: inherit;
     transform: translateX(100%);
+
+    @media screen and (max-width: $screen--xs - 1) {
+      right: -10px;
+    }
   }
 }
 
@@ -68,14 +119,36 @@
   &:nth-child(2n) {
     width: 53%;
     border-right: 1px solid rgba(164, 197, 140, 0.8);
+
+    @media screen and (max-width: $screen--xs - 1) {
+      width: 100%;
+      border-right: 0;
+    }
   }
 
   &:nth-child(2n + 1) {
     width: 47%;
     padding-left: 70px;
 
+    @media screen and (max-width: $screen--lg - 1) {
+      padding-left: 80px;
+    }
+
+    @media screen and (max-width: $screen--xs - 1) {
+      width: 100%;
+      padding-left: 40px;
+    }
+
     &::before {
       left: 30px;
+
+      @media screen and (max-width: $screen--lg - 1) {
+        left: 45px;
+      }
+
+      @media screen and (max-width: $screen--xs - 1) {
+        left: 0;
+      }
     }
   }
 
@@ -93,47 +166,145 @@
 }
 
 .symptoms__right {
+  position: relative;
   width: 43%;
   max-width: 500px;
+  padding-bottom: 30px;
+
+  @media screen and (max-width: $screen--lg - 1) {
+    width: 100%;
+    max-width: none;
+  }
+
+  @media screen and (max-width: $screen--xs-small - 1) {
+    padding-bottom: 0;
+    background-color: #f6f9f3;
+  }
 }
 
 .symptoms__img-wrapper {
   position: relative;
+  height: 100%;
+
+  @media screen and (max-width: $screen--lg - 1) {
+    background-color: #a4c58c;
+  }
+
+  &::before,
+  &::after {
+    @media screen and (max-width: $screen--lg - 1) {
+      content: "";
+      position: absolute;
+      top: -1px;
+      display: block;
+      width: calc((100vw - 100%) / 2);
+      height: 100%;
+      background-color: inherit;
+    }
+  }
+
+  &::before {
+    @media screen and (max-width: $screen--lg - 1) {
+      left: 1px;
+      transform: translateX(-100%);
+    }
+  }
+
+  &::after {
+    @media screen and (max-width: $screen--lg - 1) {
+      right: 1px;
+      transform: translateX(100%);
+    }
+  }
 }
 
 .symptoms__img-wrapper img {
   width: 100%;
+  height: 100%;
+  object-fit: cover;
+
+  @media screen and (max-width: $screen--lg - 1) {
+    width: auto;
+    margin: 0 auto;
+  }
+
+  @media screen and (max-width: $screen--xs - 1) {
+    display: none;
+  }
 }
 
 .symptoms__banner {
   position: absolute;
-  bottom: -1px;
+  bottom: 29px;
   left: -1px;
   width: 100%;
   max-width: 415px;
   padding-bottom: 0;
+
+  @media screen and (max-width: $screen--lg - 1) {
+    left: 50%;
+    padding-bottom: 20px;
+    transform: translate(-50%, 20px);
+  }
+
+  @media screen and (max-width: $screen--xs - 1) {
+    position: relative;
+    max-width: none;
+  }
+
+  @media screen and (max-width: $screen--xs-small - 1) {
+    bottom: auto;
+    left: auto;
+    transform: none;
+  }
 }
 
 .symptoms__banner .banner__inner {
   padding-top: 35px;
   padding-right: 25px;
   padding-bottom: 35px;
+
+  @media screen and (max-width: $screen--xs-small - 1) {
+    padding-right: 20px;
+  }
 }
 
 .symptoms__banner .banner__link {
   position: absolute;
   bottom: -10px;
   left: 60px;
+
+  @media screen and (max-width: $screen--lg - 1) {
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 10px;
+  }
 }
 
 .symptoms__bottom {
   display: flex;
   width: 100%;
   margin-top: 20px;
+
+  @media screen and (max-width: $screen--lg - 1) {
+    margin-top: 10px;
+  }
+
+  @media screen and (max-width: $screen--xs-small - 1) {
+    margin-top: 0;
+    padding-top: 10px;
+    background-color: #f6f9f3;
+  }
 }
 
 .symptoms__bottom .btn {
   width: 43%;
   max-width: 500px;
   margin-left: auto;
+
+  @media screen and (max-width: $screen--lg - 1) {
+    width: 100%;
+    max-width: 415px;
+    margin-right: auto;
+  }
 }

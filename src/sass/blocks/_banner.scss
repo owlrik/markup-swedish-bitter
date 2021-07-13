@@ -3,6 +3,10 @@
   padding: 20px;
   background-color: $color-body;
 
+  @media screen and (max-width: $screen--xs - 1) {
+    padding: 10px;
+  }
+
   &--bg-dark {
     background-color: #f6f9f3;
   }
@@ -15,10 +19,19 @@
 .banner__inner {
   padding: 50px;
   border: 1px solid #a4c58c;
+
+  @media screen and (max-width: $screen--xs-small - 1) {
+    padding: 20px;
+  }
 }
 
 .banner__text-wrap p {
   margin: 0 0 18px;
+
+  @media screen and (max-width: $screen--xs-small - 1) {
+    font-size: 14px;
+    line-height: 1.7;
+  }
 
   &:only-child,
   &:last-child {
@@ -46,4 +59,10 @@
   text-transform: uppercase;
   letter-spacing: 0.06em;
   background-color: $color-body;
+
+  @media screen and (max-width: $screen--xs-small - 1) {
+    font-size: 14px;
+    line-height: 1.7;
+    text-align: center;
+  }
 }

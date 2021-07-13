@@ -3,11 +3,29 @@
   text-align: center;
   border-top: 3px solid #a4c58c;
   border-bottom: 3px solid #a4c58c;
+
+  @media screen and (max-width: $screen--lg - 1) {
+    border-top-width: 2px;
+    border-bottom-width: 2px;
+  }
+
+  @media screen and (max-width: $screen--xs-small - 1) {
+    border: 0;
+  }
 }
 
 .quote__inner {
   padding-top: 55px;
   padding-bottom: 55px;
+
+  @media screen and (max-width: $screen--lg - 1) {
+    padding: 45px 60px 55px;
+  }
+
+  @media screen and (max-width: $screen--xs-small - 1) {
+    padding-right: 10px;
+    padding-left: 10px;
+  }
 }
 
 .quote__text {
@@ -15,19 +33,61 @@
   font-weight: 700;
   font-size: 24px;
   line-height: 1.66;
+
+  @media screen and (max-width: $screen--lg - 1) {
+    font-size: 18px;
+    line-height: 2;
+  }
+
+  @media screen and (max-width: $screen--xs-small - 1) {
+    font-size: 14px;
+    line-height: 1.7;
+  }
 }
 
 .quote__footer {
   margin-top: 35px;
+
+  @media screen and (max-width: $screen--lg - 1) {
+    margin-top: 30px;
+  }
+
+  @media screen and (max-width: $screen--xs-small - 1) {
+    display: flex;
+    flex-direction: column;
+  }
 }
 
 .quote__author {
   font-style: normal;
   font-size: 18px;
   line-height: 1.66;
+
+  @media screen and (max-width: $screen--lg - 1) {
+    font-size: 16px;
+  }
+
+  @media screen and (max-width: $screen--xs-small - 1) {
+    font-size: 14px;
+    line-height: 1.3;
+  }
+}
+
+.quote__author br {
+  @media screen and (min-width: $screen--xs-small) {
+    display: none;
+  }
 }
 
 .quote__date {
   font-size: 16px;
   color: #9a9a9a;
+
+  @media screen and (max-width: $screen--lg - 1) {
+    font-size: 12px;
+  }
+
+  @media screen and (max-width: $screen--xs-small - 1) {
+    margin-top: 10px;
+  }
 }

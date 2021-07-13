@@ -5,6 +5,17 @@
   font-size: 16px;
   color: $color-default-black;
 
+  @media screen and (max-width: $screen--sm - 1) {
+    padding-top: 0;
+    padding-right: 20px;
+    padding-left: 20px;
+  }
+
+  @media screen and (max-width: $screen--xs - 1) {
+    padding-right: 10px;
+    padding-left: 10px;
+  }
+
   &::before {
     content: "";
     position: absolute;
@@ -16,6 +27,10 @@
     background-color: $color-transparent;
     border: 5px solid #e4eddc;
     border-radius: 50%;
+
+    @media screen and (max-width: $screen--sm - 1) {
+      content: none;
+    }
   }
 }
 
@@ -26,6 +41,10 @@
   font-weight: 600;
   font-size: 30px;
   color: #a4c58c;
+
+  @media screen and (max-width: $screen--xs-small - 1) {
+    font-size: 24px;
+  }
 
   &::after {
     content: "";
@@ -41,6 +60,10 @@
 
 .item-statistics__year span {
   font-size: 18px;
+
+  @media screen and (max-width: $screen--xs-small - 1) {
+    font-size: 16px;
+  }
 }
 
 .item-statistics__descr {

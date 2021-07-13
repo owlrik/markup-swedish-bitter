@@ -8,12 +8,34 @@
   border: 1px solid rgba(164, 197, 140, 0.7);
   counter-increment: setCounter;
 
+  @media screen and (max-width: $screen--lg - 1) {
+    padding-top: 35px;
+  }
+
+  @media screen and (max-width: $screen--sm - 1) {
+    padding-top: 25px;
+  }
+
+  @media screen and (max-width: $screen--xs - 1) {
+    padding: 0;
+    border: 0;
+  }
+
   &::before {
     content: counter(setCounter, decimal-leading-zero);
     font-weight: 900;
     font-size: 150px;
     line-height: 1;
     color: #f7f9f3;
+
+    @media screen and (max-width: $screen--lg - 1) {
+      font-size: 110px;
+    }
+
+    @media screen and (max-width: $screen--xs - 1) {
+      font-size: 130px;
+      color: $color-body;
+    }
   }
 
   &::after {
@@ -28,6 +50,22 @@
     background-size: contain;
     background-repeat: no-repeat;
     transform: translateX(-50%);
+
+    @media screen and (max-width: $screen--lg - 1) {
+      top: 55px;
+      width: 75px;
+      height: 75px;
+    }
+
+    @media screen and (max-width: $screen--sm - 1) {
+      top: 45px;
+    }
+
+    @media screen and (max-width: $screen--xs - 1) {
+      top: 20px;
+      width: 80px;
+      height: 80px;
+    }
   }
 
   &--plants {
@@ -55,4 +93,17 @@
   font-size: 14px;
   text-transform: uppercase;
   letter-spacing: 0.05em;
+
+  @media screen and (max-width: $screen--lg - 1) {
+    margin-top: 12px;
+    font-size: 10px;
+  }
+
+  @media screen and (max-width: $screen--sm - 1) {
+    margin-top: 8px;
+  }
+
+  @media screen and (max-width: $screen--xs - 1) {
+    font-size: 12px;
+  }
 }

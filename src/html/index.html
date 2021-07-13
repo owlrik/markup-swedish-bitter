@@ -14,11 +14,11 @@
       <div class="container">
         <div class="page-header__inner">
           <a class="logo page-header__logo">
-            <img src="img/content/logo.png" width="198" height="29" alt="Логотип сайта">
+            <img src="img/content/logo.svg" width="198" height="29" alt="Логотип сайта">
           </a>
 
           <p class="page-header__delivery">
-            Доставка по всей России
+            Доставка по&nbsp;всей России
           </p>
 
           <div class="phone page-header__phone">
@@ -42,11 +42,7 @@
           <h2 class="sr-only">Уникальные свойства бальзама</h2>
 
           <div class="promo__inner">
-            <div class="promo__left">
-              <img src="img/content/swedish-bitter-01.png" width="298" height="648" alt="Swedish Bitter">
-            </div>
-
-            <div class="promo__right">
+            <div class="promo__text-content">
               <p class="promo__title">
                 <span class="promo__title-upper">Бальзам</span> <span class="promo__title-bottom">«Swedish Bitter»</span>
               </p>
@@ -54,9 +50,19 @@
               <p class="promo__text">
                 Не&nbsp;имеет аналогов в&nbsp;мире по&nbsp;оздоровительной силе и&nbsp;широте лечебных свойств
               </p>
-
-              <a class="btn" href="#">Узнать подробнее о&nbsp;бальзаме</a>
             </div>
+
+            <div class="promo__img-wrap">
+              <img src="img/content/swedish-bitter-01@1x.png" srcset="img/content/swedish-bitter-01@2x.png 2x"
+               width="298" height="648" alt="Swedish Bitter">
+            </div>
+
+            <a class="btn btn--narrow" href="#">
+              <span class="btn__text">Узнать <span>подробнее о&nbsp;бальзаме</span><span class="btn__text-mobile">больше</span></span>
+              <svg width="31" height="8" aria-hidden="true">
+                <use xlink:href="img/sprite/sprite.svg#arrow"></use>
+              </svg>
+            </a>
           </div>
         </div>
       </section>
@@ -164,25 +170,31 @@
 
             <div class="symptoms__right">
               <div class="symptoms__img-wrapper">
-                <img src="img/content/human-body.jpg" width="500" height="689" alt="Строение человека">
+                <img src="img/content/human-body@1x.jpg" srcset="img/content/human-body@2x.jpg 2x"
+                 width="500" height="689" alt="Строение человека">
+              </div>
 
-                <div class="banner banner--bg-dark symptoms__banner">
-                  <div class="banner__inner">
-                    <div class="banner__text-wrap">
-                      <p>
-                        Более 2000 покупателей доказали эффективность &laquo;Swedish Bitter&raquo; в&nbsp;каждом из&nbsp;этих
-                        случаев
-                      </p>
-                    </div>
-
-                    <a class="banner__link" href="#testimonials">Читать отзывы</a>
+              <div class="banner banner--bg-dark symptoms__banner">
+                <div class="banner__inner">
+                  <div class="banner__text-wrap">
+                    <p>
+                      Более 2000 покупателей доказали эффективность &laquo;Swedish Bitter&raquo; в&nbsp;каждом из&nbsp;этих
+                      случаев
+                    </p>
                   </div>
+
+                  <a class="banner__link" href="#testimonials">Читать отзывы</a>
                 </div>
               </div>
             </div>
 
             <div class="symptoms__bottom">
-              <a class="btn" href="#">Избавиться от проблем</a>
+              <a class="btn" href="#">
+                <span class="btn__text">Избавиться от&nbsp;проблем</span>
+                <svg width="31" height="8" aria-hidden="true">
+                  <use xlink:href="img/sprite/sprite.svg#arrow"></use>
+                </svg>
+              </a>
             </div>
           </div>
         </div>
@@ -201,7 +213,12 @@
                     </p>
                   </div>
 
-                  <a class="btn" href="#">Получить средство-панацею к&nbsp;себе в&nbsp;аптечку</a>
+                  <a class="btn" href="#">
+                    <span class="btn__text">Получить <span class="btn__text-desktop">средство-панацею</span> к&nbsp;себе в&nbsp;аптечку</span>
+                    <svg width="31" height="8" aria-hidden="true">
+                      <use xlink:href="img/sprite/sprite.svg#arrow"></use>
+                    </svg>
+                  </a>
                 </div>
               </div>
             </div>
@@ -252,7 +269,7 @@
       <section class="history">
         <div class="container container--wide">
           <div class="history__inner">
-            <div class="history__left">
+            <div class="history__top-wrap">
               <h2 class="history__title">
                 Удивительная история возникновения бальзама
               </h2>
@@ -276,27 +293,33 @@
                   популяризовала в странах Европы. Теперь сбор трав «Swedish Bitter» помогает людям по всему миру.
                 </p>
               </div>
+            </div>
 
-              <form class="form history__form" action="#" method="post">
-                <p class="form__caption">
-                  Оставьте свою почту и&nbsp;получайте рецепты молодости и&nbsp;здоровья каждую неделю
-                </p>
+            <div class="history__img-wrap">
+              <img src="img/content/paracelsus@1x.jpg" srcset="img/content/paracelsus@2x.jpg 2x"
+                   width="774" height="920" alt="Парацельс">
+            </div>
 
-                <div class="field-text form__group">
-                  <div class="field-text__input-wrap">
-                    <label class="sr-only" for="history-email">E-mail</label>
-                    <input class="field-text__input" type="email" name="email" id="history-email" placeholder="E-mail" required>
-                    <p class="field-text__error-message">Заполните поле</p>
-                  </div>
+            <form class="form history__form" action="#" method="post">
+              <p class="form__caption">
+                Оставьте свою почту и&nbsp;получайте рецепты молодости и&nbsp;здоровья каждую неделю
+              </p>
+
+              <div class="field-text form__group">
+                <div class="field-text__input-wrap">
+                  <label class="sr-only" for="history-email">E-mail</label>
+                  <input class="field-text__input" type="email" name="email" id="history-email" placeholder="E-mail" required>
+                  <p class="field-text__error-message">Заполните поле</p>
                 </div>
+              </div>
 
-                <a class="btn btn--narrow form__btn" href="#">Оставить почту</a>
-              </form>
-            </div>
-
-            <div class="history__right">
-              <img src="img/content/paracelsus.jpg" alt="Парацельс">
-            </div>
+              <a class="btn btn--narrow form__btn" href="#">
+                <span class="btn__text">Оставить почту</span>
+                <svg width="31" height="8" aria-hidden="true">
+                  <use xlink:href="img/sprite/sprite.svg#arrow"></use>
+                </svg>
+              </a>
+            </form>
 
             <div class="history__quote-wrap">
               <blockquote class="quote history__quote">
@@ -308,7 +331,7 @@
                   </p>
 
                   <footer class="quote__footer">
-                    <cite class="quote__author">Автор бальзама, Доктор Клаус Замст</cite>
+                    <cite class="quote__author">Автор бальзама,<br> Доктор Клаус Замст</cite>
                     <span class="quote__date">/1620-1724 гг./</span>
                   </footer>
                 </div>
@@ -322,7 +345,7 @@
         <div class="container">
           <div class="set__inner">
             <h2 class="set__title">
-              Что вы&nbsp;получите вместе с&nbsp;бальзамом &laquo;Swedish Bitter&raquo;?
+              Что вы&nbsp;получите вместе с&nbsp;бальзамом <span>&laquo;Swedish Bitter&raquo;?</span>
             </h2>
 
             <div class="set__list-wrap">
@@ -465,7 +488,12 @@
                     </p>
                   </div>
 
-                  <a class="btn btn--narrow" href="#">Заказать сбор трав</a>
+                  <a class="btn btn--narrow" href="#">
+                    <span class="btn__text">Заказать сбор трав</span>
+                    <svg width="31" height="8" aria-hidden="true">
+                      <use xlink:href="img/sprite/sprite.svg#arrow"></use>
+                    </svg>
+                  </a>
                 </div>
               </footer>
             </div>
@@ -528,51 +556,17 @@
                     <cite class="item-testimonials__author">Евгений</cite>
                   </blockquote>
                 </section>
-
-<!--                <section class="tabs__content-item" id="section2" role="tabpanel">-->
-<!--                  <h3 class="sr-only">От&nbsp;зарубежных потребителей</h3>-->
-
-<!--                  <blockquote class="item-testimonials">-->
-<!--                    <p class="item-testimonials__text">-->
-<!--                      Если время от&nbsp;времени употреблять горечь, то&nbsp;вообще не&nbsp;будет болеть ОРЗ или ангинами.-->
-<!--                      Младшему сыну я&nbsp;развожу раствор слабее (горечь, вода), он&nbsp;с&nbsp;удовольствием пьет,-->
-<!--                      иногда даже сам просит сделать ему горечь. Только делаю меньше половины стакана, чтобы малыш смог выпить.-->
-<!--                    </p>-->
-<!--                    <cite class="item-testimonials__author">Аноним</cite>-->
-<!--                  </blockquote>-->
-
-<!--                  <blockquote class="item-testimonials">-->
-<!--                    <p class="item-testimonials__text">-->
-<!--                      Этот сбор действительно очень хорошая вещь. Я&nbsp;его приобрела по&nbsp;совету своей тёти.-->
-<!--                      Замечательно помогает при зубной боли, а&nbsp;также я&nbsp;его постоянно принимаю при простуде.-->
-<!--                      Помогает хорошо и&nbsp;нет никакой химии.-->
-<!--                    </p>-->
-<!--                    <cite class="item-testimonials__author">Юлия</cite>-->
-<!--                  </blockquote>-->
-
-<!--                  <blockquote class="item-testimonials">-->
-<!--                    <p class="item-testimonials__text">-->
-<!--                      Моя семья на&nbsp;протяжение многих лет пользуется шведской горечью. При болях в&nbsp;горле-->
-<!--                      мы&nbsp;полоскаем горечью. Когда температура я&nbsp;даю горечь и&nbsp;при этом-->
-<!--                      мы&nbsp;не&nbsp;пользуемся таблетками.-->
-<!--                    </p>-->
-<!--                    <cite class="item-testimonials__author">Натали</cite>-->
-<!--                  </blockquote>-->
-
-<!--                  <blockquote class="item-testimonials">-->
-<!--                    <p class="item-testimonials__text">-->
-<!--                      Я&nbsp;покупаю уже готовый сбор шведский бальзам. Отказались от&nbsp;многих лекарственных препаратов-->
-<!--                      благодаря бальзаму. Так что могу только посоветовать самим попробовать, это стоит того.-->
-<!--                    </p>-->
-<!--                    <cite class="item-testimonials__author">Евгений</cite>-->
-<!--                  </blockquote>-->
-<!--                </section>-->
               </div>
             </div>
 
             <div class="testimonials__bottom-wrap">
               <a class="testimonials__link-more" href="#">Читать ещё отзывы</a>
-              <a class="btn" href="#">Присоединиться к тем, кто решил свои проблемы</a>
+              <a class="btn" href="#">
+                <span class="btn__text">Присоединиться к&nbsp;тем,<br> кто решил свои проблемы</span>
+                <svg width="31" height="8" aria-hidden="true">
+                  <use xlink:href="img/sprite/sprite.svg#arrow"></use>
+                </svg>
+              </a>
             </div>
           </div>
         </div>
@@ -582,7 +576,8 @@
         <div class="container container--wide">
           <div class="preparation__inner">
             <div class="preparation__left">
-              <img src="img/content/swedish-bitter-02.jpg" width="1074" height="755" alt="Swedish Bitter">
+              <img src="img/content/swedish-bitter-02@1x.jpg" srcset="img/content/swedish-bitter-02@2x.jpg 2x"
+               width="1074" height="755" alt="Swedish Bitter">
             </div>
 
             <div class="preparation__right">
@@ -608,7 +603,12 @@
                     </p>
                   </div>
 
-                  <a class="btn" href="#">Создать эликсир молодости и&nbsp;здоровья</a>
+                  <a class="btn" href="#">
+                    <span class="btn__text">Создать эликсир<br> молодости и&nbsp;здоровья</span>
+                    <svg width="31" height="8" aria-hidden="true">
+                      <use xlink:href="img/sprite/sprite.svg#arrow"></use>
+                    </svg>
+                  </a>
                 </div>
               </div>
             </div>
@@ -619,41 +619,45 @@
       <section class="warranty">
         <div class="container">
           <div class="warranty__inner">
-            <div class="warranty__left">
+            <div class="warranty__title-wrap">
               <h2 class="warranty__title">Гарантия качества</h2>
-
-              <div class="warranty__text-content">
-                <p class="warranty__note">
-                  <strong>
-                    Если бальзам вам не&nbsp;понравится, мы&nbsp;вернем деньги. Сразу и&nbsp;без лишних вопросов.
-                    Мы&nbsp;дорожим своей репутацией и&nbsp;уверены в&nbsp;продукте на&nbsp;100%
-                  </strong>
-                </p>
-
-                <div class="banner warranty__banner">
-                  <div class="banner__inner">
-                    <span class="banner__label">Но:</span>
-
-                    <div class="banner__text-wrap">
-                      <p>
-                        Этот эликсир&nbsp;&mdash; именно то&nbsp;средство, которое вам всегда захочется иметь дома
-                        в&nbsp;аптечке и&nbsp;рекомендовать своим близким.
-                      </p>
-
-                      <p>
-                        К&nbsp;каждой упаковке &laquo;Swedish Bitter&raquo; мы&nbsp;прикладываем немецкий сертификат
-                        качества.
-                      </p>
-                    </div>
-
-                    <a class="btn" href="#">Заказать сбор трав</a>
-                  </div>
-                </div>
-              </div>
             </div>
 
-            <div class="warranty__right">
-              <img src="img/content/cert.jpg" width="416" height="644" alt="Сертификат качества">
+            <p class="warranty__note">
+              <strong>
+                Если бальзам вам не&nbsp;понравится, мы&nbsp;вернем деньги. Сразу и&nbsp;без лишних вопросов.
+                Мы&nbsp;дорожим своей репутацией и&nbsp;уверены в&nbsp;продукте на&nbsp;100%
+              </strong>
+            </p>
+
+            <div class="warranty__img-wrap">
+              <img src="img/content/cert@1x.jpg" srcset="img/content/cert@2x.jpg 2x"
+               width="416" height="644" alt="Сертификат качества">
+            </div>
+
+            <div class="banner warranty__banner">
+              <div class="banner__inner">
+                <span class="banner__label">Но:</span>
+
+                <div class="banner__text-wrap">
+                  <p>
+                    Этот эликсир&nbsp;&mdash; именно то&nbsp;средство, которое вам всегда захочется иметь дома
+                    в&nbsp;аптечке и&nbsp;рекомендовать своим близким.
+                  </p>
+
+                  <p>
+                    К&nbsp;каждой упаковке &laquo;Swedish Bitter&raquo; мы&nbsp;прикладываем немецкий сертификат
+                    качества.
+                  </p>
+                </div>
+
+                <a class="btn" href="#">
+                  <span class="btn__text">Заказать сбор трав</span>
+                  <svg width="31" height="8" aria-hidden="true">
+                    <use xlink:href="img/sprite/sprite.svg#arrow"></use>
+                  </svg>
+                </a>
+              </div>
             </div>
           </div>
         </div>
@@ -664,7 +668,7 @@
       <div class="container">
         <div class="page-footer__inner">
           <a class="logo page-footer__logo">
-            <img src="img/content/logo.png" width="198" height="29" alt="Логотип сайта">
+            <img src="img/content/logo.svg" width="198" height="29" alt="Логотип сайта">
           </a>
 
           <ul class="page-footer__list">

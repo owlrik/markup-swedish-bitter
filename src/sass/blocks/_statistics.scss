@@ -1,6 +1,10 @@
 .statistics__inner {
   padding-top: 46px;
   padding-bottom: 50px;
+
+  @media screen and (max-width: $screen--xs-small - 1) {
+    padding: 55px 10px 0;
+  }
 }
 
 .statistics__list {
@@ -9,9 +13,46 @@
   justify-content: space-between;
   margin: 0;
   padding: 0;
+
+  @media screen and (max-width: $screen--lg - 1) {
+    width: 100%;
+    max-width: 580px;
+    margin: 0 auto;
+  }
 }
 
 .statistics__item {
   width: 25%;
   max-width: 260px;
+  margin-right: 20px;
+
+  @media screen and (max-width: $screen--lg - 1) {
+    width: 50%;
+    max-width: 250px;
+    margin-bottom: 75px;
+  }
+
+  @media screen and (max-width: $screen--sm - 1) {
+    margin-right: 0;
+  }
+
+  @media screen and (max-width: $screen--xs - 1) {
+    width: 100%;
+    max-width: none;
+    margin-left: 12%;
+  }
+
+  @media screen and (max-width: $screen--xs-small - 1) {
+    margin-bottom: 36px;
+  }
+
+  &:nth-child(2n) {
+    @media screen and (max-width: $screen--lg - 1) {
+      margin-right: 0;
+    }
+  }
+
+  &:last-child {
+    margin-right: 0;
+  }
 }

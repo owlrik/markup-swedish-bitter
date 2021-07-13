@@ -11,6 +11,17 @@
 
 @font-face {
   font-style: normal;
+  font-weight: 500;
+  font-family: $font-family--montserrat;
+  font-display: swap;
+  src:
+    local("Montserrat-Medium"),
+    url("../fonts/Montserrat-Medium-phone.woff2") format("woff2"),
+    url("../fonts/Montserrat-Medium-phone.woff") format("woff");
+}
+
+@font-face {
+  font-style: normal;
   font-weight: 600;
   font-family: $font-family--montserrat;
   font-display: swap;

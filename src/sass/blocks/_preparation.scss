@@ -1,39 +1,117 @@
 .preparation {
   margin-bottom: 200px;
+
+  @media screen and (max-width: $screen--lg - 1) {
+    margin-bottom: 125px;
+  }
+
+  @media screen and (max-width: $screen--xs-small - 1) {
+    //margin-bottom: 55px;
+    margin-bottom: 0;
+  }
 }
 
 .preparation__inner {
   display: flex;
+  align-items: center;
+
+  @media screen and (max-width: $screen--lg - 1) {
+    justify-content: center;
+  }
 }
 
 .preparation__left {
+  position: relative;
   width: 62.5%;
   max-width: 1075px;
+  min-height: 775px;
+
+  @media screen and (max-width: $screen--lg - 1) {
+    display: none;
+  }
+}
+
+.preparation__left img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: right center;
 }
 
 .preparation__right {
   max-width: 685px;
   margin-left: -315px;
-  padding-top: 60px;
+  padding-top: 10px;
+
+  @media screen and (max-width: $screen--lg - 1) {
+    max-width: 680px;
+    margin-left: 0;
+    padding-top: 0;
+  }
 }
 
 .preparation__title {
   margin: 0 0 48px;
+  font-weight: 700;
   font-size: 40px;
   line-height: 1.25;
+
+  @media screen and (max-width: $screen--xs-small - 1) {
+    margin-bottom: 22px;
+    font-size: 24px;
+    line-height: 1.25;
+    text-align: center;
+  }
+}
+
+.preparation__banner {
+  @media screen and (max-width: $screen--xs-small - 1) {
+    padding: 0;
+  }
 }
 
 .preparation__banner .banner__inner {
   padding: 58px 30px 70px 80px;
+
+  @media screen and (max-width: $screen--lg - 1) {
+    padding-left: 75px;
+  }
+
+  @media screen and (max-width: $screen--xs) {
+    padding-top: 30px;
+    padding-left: 30px;
+  }
+
+  @media screen and (max-width: $screen--xs-small - 1) {
+    padding: 0 10px;
+    border: 0;
+  }
 }
 
 .preparation__banner .banner__text-wrap p {
   margin: 0 0 15px;
   line-height: 1.375;
 
+  @media screen and (max-width: $screen--xs-small - 1) {
+    line-height: 1.58;
+  }
+
   &:last-child {
-    margin-top: 28px;
+    margin-top: 30px;
     margin-bottom: 0;
+    font-size: 14px;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+
+    @media screen and (max-width: $screen--xs-small - 1) {
+      margin-top: 20px;
+      font-size: 12px;
+      line-height: 1.66;
+      text-align: center;
+    }
   }
 }
 
@@ -41,4 +119,23 @@
   width: 100%;
   max-width: 500px;
   margin-top: 60px;
+
+  @media screen and (max-width: $screen--xs-small - 1) {
+    width: 100vw;
+    margin-top: 35px;
+    margin-right: -10px;
+    margin-left: -10px;
+  }
+}
+
+.preparation__banner .btn__text br {
+  @media screen and (min-width: $screen--xs-small) {
+    content: "";
+  }
+
+  &::after {
+    @media screen and (min-width: $screen--xs-small) {
+      content: " ";
+    }
+  }
 }

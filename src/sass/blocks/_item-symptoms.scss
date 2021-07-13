@@ -6,6 +6,17 @@
   border-bottom: 1px solid rgba(164, 197, 140, 0.8);
   counter-increment: symptomsCounter;
 
+  @media screen and (max-width: $screen--xs-small - 1) {
+    padding-right: 10px;
+    padding-left: 35px;
+  }
+
+  &:last-of-type {
+    @media screen and (max-width: $screen--xs-small - 1) {
+      border-bottom: 0;
+    }
+  }
+
   &::before {
     content: counter(symptomsCounter, decimal-leading-zero) ".";
     position: absolute;
@@ -17,6 +28,23 @@
     color: #a4c58c;
     letter-spacing: 1px;
     transform: translateY(-50%);
+
+    @media screen and (max-width: $screen--xs-small - 1) {
+      font-size: 12px;
+    }
+  }
+
+  &::after {
+    @media screen and (max-width: $screen--xs-small - 1) {
+      content: "";
+      position: absolute;
+      bottom: -1px;
+      left: 0;
+      display: block;
+      width: 25px;
+      height: 1px;
+      background-color: #f6f9f3;
+    }
   }
 }
 
@@ -26,7 +54,12 @@
   font-weight: 600;
   font-size: 14px;
   text-transform: uppercase;
-  letter-spacing: 1px;
+  letter-spacing: 0.06em;
+
+  @media screen and (max-width: $screen--xs - 1) {
+    font-size: 12px;
+    line-height: 1.66;
+  }
 }
 
 .item-symptoms__icon {
@@ -38,4 +71,8 @@
   height: 13px;
   transform: translateY(-50%);
   fill: #97b979;
+
+  @media screen and (max-width: $screen--lg - 1) {
+    display: none;
+  }
 }

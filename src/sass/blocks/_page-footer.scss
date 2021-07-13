@@ -1,10 +1,18 @@
 .page-footer__inner {
   display: flex;
   align-items: center;
+
+  @media screen and (max-width: $screen--lg - 1) {
+    padding: 25px 10px 30px;
+  }
 }
 
 .page-footer__logo {
   margin-right: 40px;
+
+  @media screen and (max-width: $screen--xs-small - 1) {
+    display: none;
+  }
 }
 
 .page-footer__list {
@@ -15,10 +23,19 @@
   margin: 0;
   padding: 0;
   list-style: none;
+
+  @media screen and (max-width: $screen--lg - 1) {
+    flex-direction: column;
+    align-items: center;
+  }
 }
 
 .page-footer__item {
   margin-right: 20px;
+
+  @media screen and (max-width: $screen--lg - 1) {
+    margin-right: 0;
+  }
 
   &:last-child {
     margin-right: 0;
@@ -33,4 +50,8 @@
 
 .page-footer__phone {
   margin-left: 70px;
+
+  @media screen and (max-width: $screen--xs-small - 1) {
+    display: none;
+  }
 }

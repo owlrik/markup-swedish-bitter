@@ -58,4 +58,17 @@
   text-transform: uppercase;
   text-decoration: none;
   letter-spacing: 0.06em;
+
+  @media screen and (max-width: $screen--lg - 1) {
+    padding-right: 30px;
+    padding-left: 40px;
+    letter-spacing: 0.08em;
+  }
+
+  @media screen and (max-width: $screen--xs-small - 1) {
+    padding: 20px 10px 20px;
+    font-size: 10px;
+    line-height: 1.8;
+    text-align: center;
+  }
 }

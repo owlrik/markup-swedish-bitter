@@ -5,6 +5,10 @@
   max-width: 1720px;
   min-height: 100vh;
   margin: 0 auto;
+
+  @media screen and (max-width: $screen--overflow-x) {
+    overflow-x: hidden;
+  }
 }
 
 .wrapper .page-header,

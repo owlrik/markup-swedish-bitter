@@ -7,10 +7,16 @@
 .phone__number {
   position: relative;
   padding-left: 25px;
+  font-weight: 500;
   font-size: 20px;
   line-height: 1;
   color: $color-text;
   text-decoration: none;
+
+  @media screen and (max-width: $screen--sm - 1) {
+    padding-left: 0;
+    font-size: 14px;
+  }
 }
 
 .phone__number svg {
@@ -20,9 +26,17 @@
   display: block;
   transform: translateY(-50%);
   fill: #a8c48c;
+
+  @media screen and (max-width: $screen--sm - 1) {
+    display: none;
+  }
 }
 
 .phone__text {
   margin: 0;
   font-size: 12px;
+
+  @media screen and (max-width: $screen--sm - 1) {
+    display: none;
+  }
 }
