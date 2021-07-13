@@ -46,6 +46,11 @@
   font-size: 12px;
   color: #9a9a9a;
   text-decoration-skip-ink: none;
+
+  &:hover,
+  &:focus {
+    text-decoration: none;
+  }
 }
 
 .page-footer__phone {

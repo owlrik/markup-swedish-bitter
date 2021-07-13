@@ -33,6 +33,11 @@
     font-size: 12px;
   }
 
+  &:hover,
+  &:focus {
+    background-color: #a4c58c;
+  }
+
   &--narrow {
     min-height: 60px;
     padding-top: 19px;

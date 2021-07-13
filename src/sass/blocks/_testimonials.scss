@@ -172,6 +172,12 @@
   text-decoration-thickness: 0.0625em;
   text-underline-offset: 2px;
 
+  &:hover,
+  &:focus {
+    color: #a4c58c;
+    text-decoration: none;
+  }
+
   @media screen and (max-width: $screen--lg - 1) {
     margin-right: 0;
   }

@@ -17,6 +17,11 @@
     padding-left: 0;
     font-size: 14px;
   }
+
+  &:hover,
+  &:focus {
+    opacity: 0.75;
+  }
 }
 
 .phone__number svg {
