@@ -75,6 +75,13 @@
   }
 }
 
+.item-ingredients--active .item-ingredients__name-wrap {
+  @media (hover: none) {
+    visibility: visible;
+    opacity: 1;
+  }
+}
+
 .item-ingredients img {
   width: 100%;
   height: 100%;
