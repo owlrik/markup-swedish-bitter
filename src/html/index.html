@@ -114,56 +114,47 @@
               </h2>
 
               <ul class="symptoms__list">
-                <li class="item-symptoms symptoms__item">
+                <li class="item-symptoms symptoms__item" data-symptom-type="weakness">
                   <p class="item-symptoms__text">Сниженный тонус, не хватает энергии</p>
                   <svg class="item-symptoms__icon" width="8" height="13" aria-hidden="true">
                     <use xlink:href="img/sprite/sprite.svg#arrow-item"></use>
                   </svg>
-<!--                  <span class="item-symptoms__mark">01</span>-->
                 </li>
-                <li class="item-symptoms symptoms__item">
+                <li class="item-symptoms symptoms__item" data-symptom-type="problem-skin">
                   <p class="item-symptoms__text">Прыщи, бородавки и растяжки</p>
                   <svg class="item-symptoms__icon" width="8" height="13" aria-hidden="true">
                     <use xlink:href="img/sprite/sprite.svg#arrow-item"></use>
                   </svg>
-<!--                  <span class="item-symptoms__mark">02</span>-->
                 </li>
-                <li class="item-symptoms symptoms__item">
+                <li class="item-symptoms symptoms__item" data-symptom-type="weak-memory">
                   <p class="item-symptoms__text">Слабая память и концентрация</p>
                   <svg class="item-symptoms__icon" width="8" height="13" aria-hidden="true">
                     <use xlink:href="img/sprite/sprite.svg#arrow-item"></use>
                   </svg>
-<!--                  <span class="item-symptoms__mark">03</span>-->
                 </li>
-                <li class="item-symptoms symptoms__item">
+                <li class="item-symptoms symptoms__item" data-symptom-type="illness">
                   <p class="item-symptoms__text">Болеете чаще раза в год?</p>
                   <svg class="item-symptoms__icon" width="8" height="13" aria-hidden="true">
                     <use xlink:href="img/sprite/sprite.svg#arrow-item"></use>
                   </svg>
-<!--                  <span class="item-symptoms__mark">04</span>-->
                 </li>
-                <li class="item-symptoms symptoms__item">
+                <li class="item-symptoms symptoms__item" data-symptom-type="headache">
                   <p class="item-symptoms__text">Головные боли</p>
                   <svg class="item-symptoms__icon" width="8" height="13" aria-hidden="true">
                     <use xlink:href="img/sprite/sprite.svg#arrow-item"></use>
                   </svg>
-<!--                  <span class="item-symptoms__mark">05</span>-->
                 </li>
                 <li class="item-symptoms symptoms__item symptoms__item--small">
                   <p class="item-symptoms__text">Синяки, шишки, ожоги, порезы долго не проходят</p>
-<!--                  <span class="item-symptoms__mark">06</span>-->
                 </li>
                 <li class="item-symptoms symptoms__item symptoms__item--small">
                   <p class="item-symptoms__text">Проблемы с желудком</p>
-<!--                  <span class="item-symptoms__mark">07</span>-->
                 </li>
                 <li class="item-symptoms symptoms__item symptoms__item--small">
                   <p class="item-symptoms__text">Плохо засыпаете и часто просыпаетесь</p>
-<!--                  <span class="item-symptoms__mark">08</span>-->
                 </li>
                 <li class="item-symptoms symptoms__item symptoms__item--small">
                   <p class="item-symptoms__text">Стресс</p>
-<!--                  <span class="item-symptoms__mark">09</span>-->
                 </li>
               </ul>
             </div>
@@ -173,6 +164,24 @@
                 <img src="img/content/human-body@1x.jpg" srcset="img/content/human-body@2x.jpg 2x"
                  width="500" height="689" alt="Строение человека">
               </div>
+
+              <ul class="symptoms__marker-list">
+                <li class="symptoms__marker-item" data-symptom-type="weakness">
+                  <span class="symptoms__marker-icon" data-symptom-index="01"></span>
+                </li>
+                <li class="symptoms__marker-item" data-symptom-type="problem-skin">
+                  <span class="symptoms__marker-icon" data-symptom-index="02"></span>
+                </li>
+                <li class="symptoms__marker-item" data-symptom-type="weak-memory">
+                  <span class="symptoms__marker-icon" data-symptom-index="03"></span>
+                </li>
+                <li class="symptoms__marker-item" data-symptom-type="illness">
+                  <span class="symptoms__marker-icon" data-symptom-index="04"></span>
+                </li>
+                <li class="symptoms__marker-item" data-symptom-type="headache">
+                  <span class="symptoms__marker-icon" data-symptom-index="05"></span>
+                </li>
+              </ul>
 
               <div class="banner banner--bg-dark symptoms__banner">
                 <div class="banner__inner">

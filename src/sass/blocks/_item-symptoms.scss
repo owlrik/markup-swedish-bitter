@@ -48,6 +48,12 @@
   }
 }
 
+.item-symptoms:hover .item-symptoms__icon,
+.item-symptoms--active .item-symptoms__icon {
+  transform: translateY(-50%);
+  opacity: 1;
+}
+
 .item-symptoms__text {
   flex-grow: 1;
   margin: auto 0;
@@ -69,8 +75,10 @@
   display: block;
   width: 8px;
   height: 13px;
-  transform: translateY(-50%);
+  transform: translateY(-50%) translateX(-20px);
+  opacity: 0;
   fill: #97b979;
+  transition: opacity 0.2s ease-in-out, transform 0.5s ease-in-out;
 
   @media screen and (max-width: $screen--lg - 1) {
     display: none;
