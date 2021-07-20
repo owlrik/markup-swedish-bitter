@@ -71,12 +71,16 @@
 }
 
 .testimonials__content .tabs__content-item {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
+  display: none;
 
-  @media screen and (max-width: $screen--lg - 1) {
-    flex-direction: column;
+  &--active {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+    @media screen and (max-width: $screen--lg - 1) {
+      flex-direction: column;
+    }
   }
 }
 
