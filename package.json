@@ -48,10 +48,7 @@
     "webpack": "^5.2.0",
     "webpack-stream": "^6.1.0"
   },
-  "dependencies": {
-    "object-fit-images": "^3.2.4",
-    "svg4everybody": "^2.1.9"
-  },
+  "dependencies": {},
   "browserslist": [
     "> 1%",
     "last 2 versions"
