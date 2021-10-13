@@ -79,12 +79,12 @@
   }
 
   &::before {
-    left: 0;
+    left: 1px;
     transform: translateX(-100%);
   }
 
   &::after {
-    right: 0;
+    right: 1px;
     transform: translateX(100%);
   }
 }
@@ -118,7 +118,7 @@
     top: 0;
     z-index: 1;
     display: block;
-    width: calc((1720px - 100%) / 2);
+    width: calc((1720px - 100%) / 2 + 1px);
     height: 75px;
     background-color: inherit;
 
@@ -128,12 +128,12 @@
   }
 
   &::before {
-    left: 0;
+    left: 1px;
     transform: translateX(-100%);
   }
 
   &::after {
-    right: 0;
+    right: 1px;
     transform: translateX(100%);
   }
 }

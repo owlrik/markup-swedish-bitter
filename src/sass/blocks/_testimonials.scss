@@ -60,12 +60,12 @@
   }
 
   &::before {
-    left: 0;
+    left: 1px;
     transform: translateX(-100%);
   }
 
   &::after {
-    right: 0;
+    right: 1px;
     transform: translateX(100%);
   }
 }

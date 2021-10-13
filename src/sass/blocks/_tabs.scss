@@ -32,14 +32,14 @@
 
 .tabs__link-wrap:first-child.tabs__link-wrap--active {
   &::after {
-    left: 0;
+    left: 1px;
     transform: translateX(-100%);
   }
 }
 
 .tabs__link-wrap:last-child.tabs__link-wrap--active {
   &::after {
-    right: 0;
+    right: 1px;
     transform: translateX(100%);
   }
 }

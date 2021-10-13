@@ -51,14 +51,14 @@
   }
 
   &::before {
-    left: 0;
-    width: calc((1720px - 1200px) / 2 + 15px);
+    left: 1px;
+    width: calc((1720px - 1200px) / 2 + 15px + 2px);
     transform: translateX(-100%);
   }
 
   &::after {
-    right: 0;
-    width: calc(1720px - ((1720px - 1170px) / 2 + 100%));
+    right: 1px;
+    width: calc(1720px - ((1720px - 1170px) / 2 + 100%) + 2px);
     transform: translateX(100%);
   }
 }
