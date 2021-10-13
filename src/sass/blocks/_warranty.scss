@@ -127,10 +127,13 @@
   }
 }
 
+.warranty__img-wrap picture {
+  margin: 0 auto;
+}
+
 .warranty__img-wrap img {
   //width: 416px;
   height: 100%;
-  margin: 0 auto;
   object-fit: cover;
 }
 
