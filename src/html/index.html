@@ -66,7 +66,7 @@
               </picture>
             </div>
 
-            <a class="btn btn--narrow" href="#">
+            <a class="btn btn--narrow" href="#" data-modal="info">
               <span class="btn__text">Узнать <span>подробнее о&nbsp;бальзаме</span><span class="btn__text-mobile">больше</span></span>
               <svg width="31" height="8" aria-hidden="true">
                 <use xlink:href="img/sprite/sprite.svg#arrow"></use>
@@ -349,12 +349,12 @@
                 </div>
               </div>
 
-              <a class="btn btn--narrow form__btn" href="#">
+              <button class="btn btn--narrow" type="submit">
                 <span class="btn__text">Оставить почту</span>
                 <svg width="31" height="8" aria-hidden="true">
                   <use xlink:href="img/sprite/sprite.svg#arrow"></use>
                 </svg>
-              </a>
+              </button>
             </form>
 
             <div class="history__quote-wrap">
@@ -905,6 +905,39 @@
         </div>
       </div>
     </footer>
+  </div>
+
+  <div class="modal modal-info">
+    <div class="modal__inner">
+      <div class="modal__overlay"></div>
+
+      <div class="modal__content">
+        <h2 class="modal__title">Узнайте подробнее о&nbsp;бальзаме</h2>
+
+        <form class="form form--info modal__form" action="#" method="post">
+          <div class="field-text form__group">
+            <label class="sr-only" for="info-name">Имя</label>
+            <input class="field-text__input" type="text" name="info-name" placeholder="Имя" id="info-name" required>
+          </div>
+
+          <div class="field-text form__group">
+            <label class="sr-only" for="info-phone">Телефон</label>
+            <input class="field-text__input" type="tel" name="info-phone" placeholder="Телефон" pattern="\+7 \([0-9]{3}\) [0-9]{3}-[0-9]{2}-[0-9]{2}" id="info-phone" required>
+          </div>
+
+          <button class="btn btn--narrow form__submit" type="submit">
+            <span class="btn__text">Узнать</span>
+            <svg width="31" height="8" aria-hidden="true">
+              <use xlink:href="img/sprite/sprite.svg#arrow"></use>
+            </svg>
+          </button>
+        </form>
+
+        <button class="btn-image modal__close" title="Закрыть">
+          <span class="sr-only">Закрыть окно</span>
+        </button>
+      </div>
+    </div>
   </div>
 
   <script src="js/vendor.min.js"></script>

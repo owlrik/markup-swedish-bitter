@@ -1,0 +1,12 @@
+.btn-image {
+  display: inline-block;
+  padding: 0;
+  font-size: 0;
+  color: currentColor;
+  background-color: $color-transparent;
+  border: 0;
+  border-radius: 0;
+  cursor: pointer;
+  user-select: none;
+  touch-action: manipulation;
+}
