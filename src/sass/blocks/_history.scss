@@ -38,7 +38,7 @@
     padding-top: 212px;
     padding-right: 22px;
     padding-left: 22px;
-    background-color: #f6f9f3;
+    background-color: $color-accent--lightest;
   }
 
   @media screen and (max-width: $screen--xs-small - 1) {
@@ -73,7 +73,7 @@
   position: relative;
   padding-top: 55px;
   padding-bottom: 58px;
-  background-color: #f6f9f3;
+  background-color: $color-accent--lightest;
 
   @media screen and (max-width: $screen--lg - 1) {
     max-width: 725px;

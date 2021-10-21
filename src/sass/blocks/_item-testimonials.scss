@@ -3,7 +3,7 @@
   padding-top: 20px;
   font-size: 16px;
   line-height: 1.375;
-  color: #9a9a9a;
+  color: $color-text--light;
 
   @media screen and (max-width: $screen--xs-small - 1) {
     font-size: 14px;
@@ -28,7 +28,7 @@
     display: block;
     width: 30px;
     height: 3px;
-    background-color: #a4c58c;
+    background-color: $color-accent;
   }
 }
 

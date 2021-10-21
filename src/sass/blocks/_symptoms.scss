@@ -67,7 +67,7 @@
   margin: 0;
   padding: 0 0 30px;
   list-style: none;
-  background-color: #f6f9f3;
+  background-color: $color-accent--lightest;
   counter-reset: symptomsCounter;
 
   @media screen and (max-width: $screen--lg - 1) {
@@ -178,7 +178,7 @@
 
   @media screen and (max-width: $screen--xs-small - 1) {
     padding-bottom: 0;
-    background-color: #f6f9f3;
+    background-color: $color-accent--lightest;
   }
 }
 
@@ -187,7 +187,7 @@
   height: 100%;
 
   @media screen and (max-width: $screen--lg - 1) {
-    background-color: #a4c58c;
+    background-color: $color-accent;
   }
 
   &::before,
@@ -354,7 +354,7 @@
   @media screen and (max-width: $screen--xs-small - 1) {
     margin-top: 0;
     padding-top: 10px;
-    background-color: #f6f9f3;
+    background-color: $color-accent--lightest;
   }
 }
 

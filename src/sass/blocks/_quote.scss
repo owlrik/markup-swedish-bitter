@@ -1,8 +1,8 @@
 .quote {
   margin: 0;
   text-align: center;
-  border-top: 3px solid #a4c58c;
-  border-bottom: 3px solid #a4c58c;
+  border-top: 3px solid $color-accent;
+  border-bottom: 3px solid $color-accent;
 
   @media screen and (max-width: $screen--lg - 1) {
     border-top-width: 2px;
@@ -81,7 +81,7 @@
 
 .quote__date {
   font-size: 16px;
-  color: #9a9a9a;
+  color: $color-text--light;
 
   @media screen and (max-width: $screen--lg - 1) {
     font-size: 12px;

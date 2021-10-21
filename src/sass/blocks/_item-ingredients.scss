@@ -5,7 +5,7 @@
   padding: 20px;
   overflow: hidden;
   font-size: 14px;
-  background-color: #f6f9f3;
+  background-color: $color-accent--lightest;
   counter-increment: ingredientsCounter;
 
   @media screen and (max-width: $screen--lg - 1) {
@@ -57,7 +57,7 @@
     width: 45px;
     font-weight: 700;
     font-size: 14px;
-    color: #a4c58c;
+    color: $color-accent;
     text-align: right;
     letter-spacing: 0.07em;
     transform-origin: 100% 0;
@@ -151,7 +151,7 @@
   width: 100%;
   font-style: normal;
   font-size: 14px;
-  color: #a4c58c;
+  color: $color-accent;
   letter-spacing: 0.07em;
   transform: rotate(-90deg);
   transform-origin: 0 0;

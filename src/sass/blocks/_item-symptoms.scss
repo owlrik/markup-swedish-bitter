@@ -25,7 +25,7 @@
     display: block;
     font-weight: 600;
     font-size: 14px;
-    color: #a4c58c;
+    color: $color-accent;
     letter-spacing: 1px;
     transform: translateY(-50%);
 
@@ -43,7 +43,7 @@
       display: block;
       width: 25px;
       height: 1px;
-      background-color: #f6f9f3;
+      background-color: $color-accent--lightest;
     }
   }
 }

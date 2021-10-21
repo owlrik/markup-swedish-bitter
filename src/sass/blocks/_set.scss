@@ -3,7 +3,7 @@
 
   @media screen and (max-width: $screen--lg - 1) {
     margin-bottom: 92px;
-    background-color: #f6f9f3;
+    background-color: $color-accent--lightest;
   }
 
   @media screen and (max-width: $screen--xs-small - 1) {
@@ -57,7 +57,7 @@
 .set__list-wrap {
   position: relative;
   padding-bottom: 100px;
-  background-color: #f6f9f3;
+  background-color: $color-accent--lightest;
 
   @media screen and (max-width: $screen--lg - 1) {
     padding-bottom: 0;
@@ -108,7 +108,7 @@
     flex-direction: column;
     align-items: center;
     padding: 0;
-    background-color: #f6f9f3;
+    background-color: $color-accent--lightest;
   }
 
   &::before,

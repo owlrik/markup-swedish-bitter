@@ -30,7 +30,7 @@
   left: 0;
   display: block;
   transform: translateY(-50%);
-  fill: #a8c48c;
+  fill: $color-accent--light;
 
   @media screen and (max-width: $screen--sm - 1) {
     display: none;

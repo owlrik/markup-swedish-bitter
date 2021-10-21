@@ -1,5 +1,5 @@
 .warranty {
-  background-color: #f6f9f3;
+  background-color: $color-accent--lightest;
 }
 
 .warranty__inner {
@@ -36,7 +36,7 @@
   }
 
   @media screen and (max-width: $screen--xs-small - 1) {
-    background-color: #f6f9f3;
+    background-color: $color-accent--lightest;
   }
 
   &::before,
@@ -149,7 +149,7 @@
   @media screen and (max-width: $screen--xs-small - 1) {
     margin-left: 0;
     padding: 0;
-    background-color: #f6f9f3;
+    background-color: $color-accent--lightest;
   }
 }
 
@@ -178,7 +178,7 @@
 
   @media screen and (max-width: $screen--xs-small - 1) {
     position: static;
-    background-color: #f6f9f3;
+    background-color: $color-accent--lightest;
   }
 }
 

@@ -38,7 +38,7 @@
 .testimonials__content {
   position: relative;
   padding: 60px 70px 10px;
-  background-color: #f6f9f3;
+  background-color: $color-accent--lightest;
 
   @media screen and (max-width: $screen--lg - 1) {
     padding: 45px 80px 10px;
@@ -113,7 +113,7 @@
     margin-top: 0;
     padding-top: 12px;
     padding-bottom: 75px;
-    background-color: #f6f9f3;
+    background-color: $color-accent--lightest;
   }
 
   @media screen and (max-width: $screen--xs-small - 1) {
@@ -174,7 +174,7 @@
 
   &:hover,
   &:focus {
-    color: #a4c58c;
+    color: $color-accent;
     text-decoration: none;
   }
 

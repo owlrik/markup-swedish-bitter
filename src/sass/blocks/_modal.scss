@@ -62,7 +62,7 @@
   max-width: 520px;
   padding: 20px 20px 0;
   background-color: $color-body;
-  border: 2px solid #a4c58c;
+  border: 2px solid $color-accent;
   box-shadow: 0 0 14px rgba($color-default-black, 0.2);
 
   @media screen and (max-width: $screen--md - 1) {
@@ -109,7 +109,7 @@
   &:hover {
     &::before,
     &::after {
-      background-color: #9a9a9a;
+      background-color: $color-text--light;
     }
   }
 

@@ -8,17 +8,17 @@
   }
 
   &--bg-dark {
-    background-color: #f6f9f3;
+    background-color: $color-accent--lightest;
   }
 }
 
 .banner--bg-dark .banner__link {
-  background-color: #f6f9f3;
+  background-color: $color-accent--lightest;
 }
 
 .banner__inner {
   padding: 50px;
-  border: 1px solid #a4c58c;
+  border: 1px solid $color-accent;
 
   @media screen and (max-width: $screen--xs-small - 1) {
     padding: 20px;
@@ -51,7 +51,7 @@
 
   &:hover,
   &:focus {
-    color: #a4c58c;
+    color: $color-accent;
     text-decoration: none;
   }
 }
@@ -61,7 +61,7 @@
   padding-right: 8px;
   padding-left: 8px;
   font-weight: 700;
-  color: #a4c58c;
+  color: $color-accent;
   text-transform: uppercase;
   letter-spacing: 0.06em;
   background-color: $color-body;

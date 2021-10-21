@@ -9,14 +9,14 @@
   font-size: 14px;
   line-height: 1.5;
   font-family: $font-family--montserrat;
-  color: #a8c48c;
+  color: $color-accent--light;
   border: 0;
   border-bottom: 1px solid currentColor;
   border-radius: 0;
   outline: 0;
 
   &:focus {
-    color: #7eb252;
+    color: $color-accent--dark;
     box-shadow: 0 1px 0 0 currentColor;
   }
 

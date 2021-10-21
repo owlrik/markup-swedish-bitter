@@ -13,7 +13,7 @@
   }
 
   &--active {
-    background-color: #f6f9f3;
+    background-color: $color-accent--lightest;
   }
 }
 
@@ -70,5 +70,10 @@
     font-size: 10px;
     line-height: 1.8;
     text-align: center;
+  }
+
+  &:focus,
+  &:hover {
+    color: $color-accent;
   }
 }

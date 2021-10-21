@@ -17,7 +17,7 @@
   text-decoration: none;
   letter-spacing: 1px;
   white-space: normal;
-  background-color: #7eb252;
+  background-color: $color-accent--dark;
   border: 0;
   border-radius: 0;
   cursor: pointer;
@@ -35,7 +35,7 @@
 
   &:hover,
   &:focus {
-    background-color: #a4c58c;
+    background-color: $color-accent;
   }
 
   &--narrow {
