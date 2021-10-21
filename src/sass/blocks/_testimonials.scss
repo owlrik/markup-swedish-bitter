@@ -27,9 +27,11 @@
   }
 }
 
-.testimonials__title br {
+.testimonials__title span {
+  display: block;
+
   @media screen and (max-width: $screen--lg - 1) {
-    display: none;
+    display: inline;
   }
 }
 
@@ -155,15 +157,9 @@
   }
 }
 
-.testimonials__bottom-wrap .btn__text br {
-  @media screen and (min-width: $screen--xs-small) {
-    content: "";
-  }
-
-  &::after {
-    @media screen and (min-width: $screen--xs-small) {
-      content: " ";
-    }
+.testimonials__bottom-wrap .btn__text span {
+  @media screen and (max-width: $screen--xs-small - 1) {
+    display: block;
   }
 }
 
