@@ -369,7 +369,9 @@ body {
   font-family: "Montserrat", "Verdana", "Arial", sans-serif;
   color: #303030;
   overflow-wrap: break-word;
-  background-color: #ffffff; }
+  background-color: #ffffff;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale; }
 
 img,
 video {
