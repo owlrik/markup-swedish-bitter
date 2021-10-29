@@ -314,28 +314,28 @@ template {
   font-weight: 400;
   font-family: "Montserrat";
   font-display: swap;
-  src: url("../fonts/Montserrat-Regular.woff2") format("woff2"), url("../fonts/Montserrat-Regular.woff") format("woff"); }
+  src: local("Montserrat-Regular"), url("../fonts/Montserrat-Regular.woff2") format("woff2"), url("../fonts/Montserrat-Regular.woff") format("woff"); }
 
 @font-face {
   font-style: normal;
   font-weight: 500;
   font-family: "Montserrat";
   font-display: swap;
-  src: url("../fonts/Montserrat-Medium-phone.woff2") format("woff2"), url("../fonts/Montserrat-Medium-phone.woff") format("woff"); }
+  src: local("Montserrat-Medium"), url("../fonts/Montserrat-Medium-phone.woff2") format("woff2"), url("../fonts/Montserrat-Medium-phone.woff") format("woff"); }
 
 @font-face {
   font-style: normal;
   font-weight: 600;
   font-family: "Montserrat";
   font-display: swap;
-  src: url("../fonts/Montserrat-SemiBold.woff2") format("woff2"), url("../fonts/Montserrat-SemiBold.woff") format("woff"); }
+  src: local("Montserrat-SemiBold"), url("../fonts/Montserrat-SemiBold.woff2") format("woff2"), url("../fonts/Montserrat-SemiBold.woff") format("woff"); }
 
 @font-face {
   font-style: normal;
   font-weight: 700;
   font-family: "Montserrat";
   font-display: swap;
-  src: url("../fonts/Montserrat-Bold.woff2") format("woff2"), url("../fonts/Montserrat-Bold.woff") format("woff"); }
+  src: local("Montserrat-Bold"), url("../fonts/Montserrat-Bold.woff2") format("woff2"), url("../fonts/Montserrat-Bold.woff") format("woff"); }
 
 @font-face {
   font-style: normal;
@@ -343,7 +343,7 @@ template {
   font-family: "Montserrat";
   font-display: swap;
   unicode-range: U+0030-0039;
-  src: url("../fonts/Montserrat-Black-numbers.woff2") format("woff2"), url("../fonts/Montserrat-Black-numbers.woff") format("woff"); }
+  src: local("Montserrat-Black"), url("../fonts/Montserrat-Black-numbers.woff2") format("woff2"), url("../fonts/Montserrat-Black-numbers.woff") format("woff"); }
 
 *,
 *::before,
