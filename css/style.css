@@ -312,38 +312,38 @@ template {
 @font-face {
   font-style: normal;
   font-weight: 400;
-  font-family: "Montserrat", "Verdana", "Arial", sans-serif;
+  font-family: "Montserrat";
   font-display: swap;
-  src: local("Montserrat-Regular"), url("../fonts/Montserrat-Regular.woff2") format("woff2"), url("../fonts/Montserrat-Regular.woff") format("woff"); }
+  src: url("../fonts/Montserrat-Regular.woff2") format("woff2"), url("../fonts/Montserrat-Regular.woff") format("woff"); }
 
 @font-face {
   font-style: normal;
   font-weight: 500;
-  font-family: "Montserrat", "Verdana", "Arial", sans-serif;
+  font-family: "Montserrat";
   font-display: swap;
-  src: local("Montserrat-Medium"), url("../fonts/Montserrat-Medium-phone.woff2") format("woff2"), url("../fonts/Montserrat-Medium-phone.woff") format("woff"); }
+  src: url("../fonts/Montserrat-Medium-phone.woff2") format("woff2"), url("../fonts/Montserrat-Medium-phone.woff") format("woff"); }
 
 @font-face {
   font-style: normal;
   font-weight: 600;
-  font-family: "Montserrat", "Verdana", "Arial", sans-serif;
+  font-family: "Montserrat";
   font-display: swap;
-  src: local("Montserrat-SemiBold"), url("../fonts/Montserrat-SemiBold.woff2") format("woff2"), url("../fonts/Montserrat-SemiBold.woff") format("woff"); }
+  src: url("../fonts/Montserrat-SemiBold.woff2") format("woff2"), url("../fonts/Montserrat-SemiBold.woff") format("woff"); }
 
 @font-face {
   font-style: normal;
   font-weight: 700;
-  font-family: "Montserrat", "Verdana", "Arial", sans-serif;
+  font-family: "Montserrat";
   font-display: swap;
-  src: local("Montserrat-Bold"), url("../fonts/Montserrat-Bold.woff2") format("woff2"), url("../fonts/Montserrat-Bold.woff") format("woff"); }
+  src: url("../fonts/Montserrat-Bold.woff2") format("woff2"), url("../fonts/Montserrat-Bold.woff") format("woff"); }
 
 @font-face {
   font-style: normal;
   font-weight: 900;
-  font-family: "Montserrat", "Verdana", "Arial", sans-serif;
+  font-family: "Montserrat";
   font-display: swap;
   unicode-range: U+0030-0039;
-  src: local("Montserrat-Black"), url("../fonts/Montserrat-Black-numbers.woff2") format("woff2"), url("../fonts/Montserrat-Black-numbers.woff") format("woff"); }
+  src: url("../fonts/Montserrat-Black-numbers.woff2") format("woff2"), url("../fonts/Montserrat-Black-numbers.woff") format("woff"); }
 
 *,
 *::before,
@@ -366,7 +366,7 @@ body {
   overflow-x: hidden;
   font-size: 16px;
   line-height: 1.5;
-  font-family: "Montserrat", "Verdana", "Arial", sans-serif;
+  font-family: "Montserrat", "Arial", sans-serif;
   color: #303030;
   overflow-wrap: break-word;
   background-color: #ffffff;
@@ -519,7 +519,7 @@ button,
   font-weight: 600;
   font-size: 14px;
   line-height: 1.57;
-  font-family: "Montserrat", "Verdana", "Arial", sans-serif;
+  font-family: "Montserrat", "Arial", sans-serif;
   vertical-align: middle;
   color: #ffffff;
   text-align: center;
@@ -659,7 +659,7 @@ button,
   padding: 8px 0;
   font-size: 14px;
   line-height: 1.5;
-  font-family: "Montserrat", "Verdana", "Arial", sans-serif;
+  font-family: "Montserrat", "Arial", sans-serif;
   color: #a8c48c;
   border: 0;
   border-bottom: 1px solid currentColor;
